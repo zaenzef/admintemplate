@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css")
 
 :root {
     --main-color: #22BAA0;
@@ -501,7 +502,9 @@ body.aktif .main-content .top_navbar .mini-ham span:before{
         left: 240px;
     }
     body.aktif .main-content .top_navbar .mini-ham span:before{
-        content: '\2B9C';
+/*         content: '\2B9C'; */
+        content: '\f35a'; /* You should use \ and not /*/
+        font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
     }
 }
 /* ---------------------------------------------- end Responsive Screen*/
