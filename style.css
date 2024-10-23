@@ -442,7 +442,10 @@ body.aktif .main-content .top_navbar .mini-ham span:before{
         left: 240px;
     }
     body.aktip .main-content .top_navbar .tabs-ham span:before{
-        content: '\2B9C';
+        content: '\f060';
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-weight: 900;
     }
     body.active .main-content .top_navbar .hamburger span:before{
         content: '';
