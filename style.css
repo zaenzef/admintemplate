@@ -503,7 +503,9 @@ body.aktif .main-content .top_navbar .mini-ham span:before{
     }
     body.aktif .main-content .top_navbar .mini-ham span:before{
         content: '\f060';
-        font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-weight: 900;
     }
 }
 /* ---------------------------------------------- end Responsive Screen*/
