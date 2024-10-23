@@ -502,7 +502,7 @@ body.aktif .main-content .top_navbar .mini-ham span:before{
         left: 240px;
     }
     body.aktif .main-content .top_navbar .mini-ham span:before{
-        content: '\2B9C';
+        content: '\f060';
         font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
     }
 }
