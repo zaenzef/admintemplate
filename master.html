@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <title>Admin Dashboard</title>
+  <link rel = "icon" href = "favicon.png" type = "image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="side-content">
+      <div class="profile">
+        <div class="profile-img bg-img" style="background-image: url(tz.png)"></div>
+        <h4>Software Applications</h4>
+        <small>Inventory System</small>
+      </div>
+      <div class="side-bar">
+        <ul>
+          <li>
+            <a href="index.html" class="first">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="item">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="master.html">
+              <span class="icon"><i class="fas fa-desktop"></i></span>
+              <span class="item">Master</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="rep">
+              <span class="icon"><i class="fas fa-edit"></i></span>
+              <span class="item">Transaction ▾</span>
+            </a>
+            <ul class="subrep">
+              <li><a href="#">Purchase Order</a></li>
+              <li><a href="#">Sales</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="rep">
+              <span class="icon"><i class="fas fa-chart-line"></i></span>
+              <span class="item">Reports ▾</span>
+            </a>
+            <ul class="subrep">
+              <li><a href="#">Turnover</a></li>
+              <li><a href="#">Stock</a></li>
+              <li><a href="#">Summary</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-cog"></i></span>
+              <span class="item">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="top_navbar">
+      <div class="hamburger"><span class="fas fa-angle-double-left"></span></div>
+      <div class="tabs-ham"><span></span></div>
+      <div class="mini-ham"><span></span></div>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="master.html">Master</a></li>
+        <li>
+          <a href="#">Transaction ▾</a>
+          <ul>
+            <li><a href="#">Purchase Order</a></li>
+            <li><a href="#">Sales</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Reports ▾</a>
+          <ul>
+            <li><a href="#">Turnover</a></li>
+            <li><a href="#">Stock</a></li>
+            <li><a href="#">Summary</a></li>
+            <li><a href="#">Turnover</a></li>
+            <li><a href="#">Stock</a></li>
+            <li><a href="#">Summary</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+    <main>
+      <div class="page-header">
+        <h1>Master</h1>
+        <small>Home / Master</small>
+      </div>
+      <div class="page-content">
+        <div class="container">
+          <div class="title">Form Input</div>
+          <div class="content">
+            <form action="#">
+              <div class="user-details">
+                <div class="input-box">
+                  <span class="details">Kode Barang</span>
+                  <input type="text" placeholder="Enter your code" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Nama Barang</span>
+                  <input type="text" placeholder="Enter your item" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Harga Beli</span>
+                  <input type="text" placeholder="Enter your price" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Harga Jual</span>
+                  <input type="text" placeholder="Enter your price" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Kategori</span>
+                  <input type="text" placeholder="Enter your category" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Produksi</span>
+                  <input type="text" placeholder="Confirm your production" required>
+                </div>
+              </div>
+              <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Satuan</span>
+                <div class="category">
+                  <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Pcs</span>
+                  </label>
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Pak</span>
+                  </label>
+                  <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="gender">Box</span>
+                  </label>
+                </div>
+              </div>
+              <div class="button">
+                <input type="submit" value="Simpan">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
+  <script>
+    var hamburger = document.querySelector(".hamburger");
+    var tabsham = document.querySelector(".tabs-ham");
+    var miniham = document.querySelector(".mini-ham");
+    var rep = document.querySelector(".rep");
+
+    hamburger.addEventListener("click", function()
+    {
+      document.querySelector("body").classList.toggle("active");
+    })
+
+    tabsham.addEventListener("click", function()
+    {
+      document.querySelector("body").classList.toggle("aktip");
+    })
+
+    miniham.addEventListener("click", function()
+    {
+      document.querySelector("body").classList.toggle("aktif");
+    })
+
+    $(document).ready(function(){
+      $('.rep').click(function(){
+        $(this).next('.subrep').slideToggle();
+      });
+    });
+  </script>
+</body>
+</html>
+
+
