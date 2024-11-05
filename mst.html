@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   <title>Admin Dashboard</title>
+  
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
   <link rel = "icon" href = "favicon.png" type = "image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -115,7 +119,7 @@
                 </div>
                 <div class="input-box">
                   <span class="details">Tgl.Edar</span>
-                  <input type="date" required>
+                  <input type="text" id="datepicker" placeholder="dd-mm-yyyy" required>
                 </div>
                 <div class="input-box">
                   <span class="details">Tgl.Batas</span>
@@ -165,7 +169,11 @@
       </div>
     </main>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- datepicker -->
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
   <script>
     var hamburger = document.querySelector(".hamburger");
     var tabsham = document.querySelector(".tabs-ham");
@@ -190,6 +198,15 @@
     $(document).ready(function(){
       $('.rep').click(function(){
         $(this).next('.subrep').slideToggle();
+      });
+    });
+
+    // datepicker
+    $(function(){
+      $( "#datepicker" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        dateFormat: "dd-mm-yy"
       });
     });
   </script>
