@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css")
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 
-:root {
-    --main-color: #22BAA0;
-    --color-dark: #34425A;
-    --text-grey: #B0B0B0;
-}
 
 * {
     margin: 0;
@@ -260,7 +255,7 @@ main {
 
 .card-head span {
     font-size: 3.2rem;
-    color: var(--text-grey);
+    color: #B0B0B0;
 }
 
 .card-progress small {
@@ -563,6 +558,19 @@ body.active .main-content .top_navbar .mini-ham span:before{
 .container .user-details .input-box input:valid {
   border-color: #9b59b6;
 }
+
+/* start icon datepicker */
+.input-box {
+    position: relative;
+}
+.input-box > img{
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    color: red;
+}
+.abuabu { filter: opacity(50%); }
+/* end icon datepicker */
 
 .container form .gender-details .gender-title {
   font-size: 20px;
